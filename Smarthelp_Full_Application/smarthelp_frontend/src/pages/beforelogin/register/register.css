@@ -1,0 +1,161 @@
+.page-bg {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(/public/images/regbg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tohome a {
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.page-bg h1 {
+  text-align: center;
+  color: hsl(24, 100%, 50%);
+}
+
+.log-reg-content {
+  width: 80%;
+  margin: auto;
+}
+
+.log-reg-row {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-reg-box {
+  margin-top: 0%;
+  flex-basis: 40%;
+}
+
+.log-reg-box img {
+  width: 100%;
+}
+
+.log-reg-box-form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.7));
+  border-radius: 40px;
+  flex-basis: 40%;
+  color: aliceblue;
+  text-align: left;
+  padding-top: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.log-reg-box-form form {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+form .text_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 20px 0;
+}
+
+.text_field input {
+  color: #ccc;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.text_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.text_field span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0eba9d;
+  transition: .5s;
+}
+
+.text_field input:focus~label,
+.text_field input:valid~label {
+  top: -5px;
+  color: #0eba9d;
+}
+
+.text_field input:focus~span::before,
+.text_field input:valid~span::before {
+  width: 100%;
+}
+
+.submit {
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  height: 50px;
+  border: none;
+  background: rgb(24, 112, 100);
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.submit:hover {
+  background-color: #0eba9d;
+  color: #000;
+  transition: .5s;
+}
+
+
+div.error {
+  color: #ff6c6c;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid #ff0000;
+}
+
+.login-link {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.login-link a {
+  color: #0eba9d;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

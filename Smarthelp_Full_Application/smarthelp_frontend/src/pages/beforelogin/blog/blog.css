@@ -1,0 +1,45 @@
+.blog-content {
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+}
+
+.blog-row {
+  display: flex;
+}
+
+.blog-left {
+  flex-basis: 20%;
+  background-color: #1bcd68;
+  height: 800px;
+}
+
+
+.blog-right {
+  flex-basis: 80%;
+  background-color: rgb(214, 214, 214);
+  padding: 15px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.testimonial {
+  background-color: #8d6565;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid-col-span {
+  grid-column: span 2;
+}
+
+.testimonial:last-child {
+  grid-column-start: 4;
+  grid-row: 1 / 3;
+}
+
+.testimonial p {
+  color: black;
+}

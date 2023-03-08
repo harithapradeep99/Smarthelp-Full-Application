@@ -1,0 +1,249 @@
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/public/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.content {
+  width: 80%;
+  margin: auto;
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+.content-row {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-box {
+  flex-basis: 48%;
+  color: aliceblue;
+  text-align: left;
+}
+
+.text-box img {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.text-box h1 {
+  color: #00ff0d;
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: aliceblue;
+  opacity: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hero-btn:hover {
+  border: 1px solid #76ba1b;
+  background-color: #76ba1b;
+  transition: 1s;
+}
+
+
+.slide-left {
+  animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translate(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.text-box p.slide-left {
+  animation-delay: 1s;
+}
+
+.text-box a.slide-left {
+  animation-delay: 2s;
+}
+
+
+@media (max-width: 700px) {
+
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .content-row {
+    flex-direction: column;
+  }
+
+}
+
+/* ----------------------------------CSR Projects----------------------------------- */
+
+.csr-section {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.csr-row {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.csr-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.csr-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .csr-row {
+    flex-direction: column;
+  }
+}
+
+/* ----------------------------------Events----------------------------------- */
+
+.event {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.event-row {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-col img {
+  width: 500px;
+  height: 700px;
+  display: block;
+}
+
+.layer {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background-color: rgba(100, 0, 55, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .event-row {
+    flex-direction: column;
+  }
+}
+
+
+/* ------------------------------Call To Action------------------------------- */
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/public//images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}

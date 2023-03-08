@@ -1,0 +1,126 @@
+.my-project_type {
+    margin-top: 40px;
+    height: 50px;
+    background-color: #005f20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-project_type h3 {
+    color: #fff3f3;
+    font-weight: 600;
+}
+
+.my-project_name {
+    height: 50px;
+    background-color: #6bff90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-project_name h2 {
+    color: #002e0e;
+    font-weight: 600;
+}
+
+.my-project_specs_row {
+    height: 100px;
+    background-color: #0a8a30;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-project_specs_col {
+    gap: 15px;
+    display: flex;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.my-project_specs_col_left{
+    background-color: #e0b7b7;
+    width: 200px;
+}
+.my-project_specs_col_right{
+    background-color: #555555;
+    width: 200px;
+}
+.my-project_specs_col_donations{
+    /* background-color: #d1aeae; */
+    width: 200px;
+}
+
+.my-project_specs_col h1 {
+    font-size: 22px;
+    color: #fff3f3;
+}
+
+.my-project_body {
+    margin-top: 30px;
+    height: auto;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.my-image_grid {
+    height: 500px;
+    width: 100%;
+    background-color: #555555;
+    border-radius: 20px;
+}
+
+.my-project_des {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.my-project_des h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.my-project_details_row{
+    margin-left: 10px;
+    display: flex;
+    gap: 25px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+.my-active_tab{
+    color: rgba(248, 50, 159, 0.986);
+}
+
+.my-project_details_data{
+    margin-left: 10px;
+    display: none;
+    text-align: left;
+}
+.my-active_data{
+    display: block;
+}
+
+.my-project_details_data button {
+    width: 100px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #154606;
+    border: none;
+    border-radius: 5px;
+}
+
+.my-project_details_data button:hover {
+    background-color: #c88115;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

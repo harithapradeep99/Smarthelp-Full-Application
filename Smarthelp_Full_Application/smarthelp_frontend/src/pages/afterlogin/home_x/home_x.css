@@ -1,0 +1,10 @@
+.landingPage h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 50PX;
+    margin-bottom: 20px;
+}

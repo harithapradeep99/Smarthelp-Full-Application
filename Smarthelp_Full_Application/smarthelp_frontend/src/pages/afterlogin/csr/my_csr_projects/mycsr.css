@@ -1,0 +1,149 @@
+.my_csr_col {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.my_csr_col h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.my_csr_content {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.my_csr_row {
+  display: flex;
+}
+
+.my_csr_left {
+  flex-basis: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  border: solid rgb(0, 129, 108);
+  height: auto;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.my_csr_button {
+  text-decoration: none;
+  background-color: rgb(0, 129, 108);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.my_csr_button:hover {
+  background-color: rgb(103, 179, 179);
+}
+
+.my_csr_right {
+  flex-basis: 80%;
+  display: grid;
+  gap: 25px;
+  padding: 0 25px;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+/* .my-project-box {
+  background-color: #8d6565;
+  padding: 10px;
+  border-radius: 10px; 
+} */
+
+.my-project-box-up,
+.my-project-box-down {
+  height: 250px;
+  width: 350px;
+  background-color: #ffb005;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-project-box img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.my-project-box-down {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-pbr-col-1 {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-title h1 {
+  font-size: 18px;
+  text-align: left;
+  color: #000;
+  font-weight: 1000;
+}
+
+.my-title h2 {
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  font-weight: 500;
+}
+
+.my-read button {
+  padding: 7px 20px;
+  color: rgb(65, 1, 85);
+  background-color: #ffffff;
+  border: 2px solid #560065;
+  border-radius: 5px;
+}
+
+.my-read button:hover {
+  background-color: #8b6c91;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-pbr-col-2 {
+  padding: 0 20px;
+  height: auto;
+}
+
+.my-pbr-col-2 p {
+  color: #000;
+  font-weight: 500;
+  text-align: left;
+  height: 70px;
+  overflow: hidden;
+}
+
+.my-pbr-col-3 {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-pbr-col-3-row-1 p {
+  color: #000;
+  font-weight: 500;
+}

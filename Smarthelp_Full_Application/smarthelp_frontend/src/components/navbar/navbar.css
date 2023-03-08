@@ -1,0 +1,122 @@
+.log-reg ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.log-reg ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav {
+  padding: 20px 60px 0px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+nav img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #00ff6a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+  }
+
+  .nav img {
+    width: 10px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #69181286;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .nav-links ul {
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  .log-reg ul li {
+    display: block;
+  }
+
+  .log-reg {
+    position: fixed;
+    background: #1bcd68;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .log-reg ul {
+    padding: 30px;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.navbar-background {
+  background-color: black;
+}
